@@ -84,7 +84,7 @@ export default function Estoque({navigation}) {
                         >
                         <Text style={styles.text}> + </Text></TouchableOpacity>
 
-                        <Text style={styles.text}>Quantidade: {contador0}</Text>
+                        <Text style={styles.text}>Qtd: {contador0}</Text>
 
                         <TouchableOpacity
                         style={styles.button}
@@ -112,7 +112,7 @@ export default function Estoque({navigation}) {
                         >
                         <Text style={styles.text}> + </Text></TouchableOpacity>
 
-                        <Text style={styles.text}>Quantidade: {contador1}</Text>
+                        <Text style={styles.text}>Qtd: {contador1}</Text>
 
                         <TouchableOpacity
                         style={styles.button}
@@ -140,7 +140,7 @@ export default function Estoque({navigation}) {
                         >
                         <Text style={styles.text}> + </Text></TouchableOpacity>
 
-                        <Text style={styles.text}>Quantidade: {contador2}</Text>
+                        <Text style={styles.text}>Qtd: {contador2}</Text>
 
                         <TouchableOpacity
                         style={styles.button}
@@ -168,7 +168,7 @@ export default function Estoque({navigation}) {
                         >
                         <Text style={styles.text}> + </Text></TouchableOpacity>
 
-                        <Text style={styles.text}>Quantidade: {contador3}</Text>
+                        <Text style={styles.text}>Qtd: {contador3}</Text>
 
                         <TouchableOpacity
                         style={styles.button}
@@ -196,7 +196,7 @@ export default function Estoque({navigation}) {
                         >
                         <Text style={styles.text}> + </Text></TouchableOpacity>
 
-                        <Text style={styles.text}>Quantidade: {contador4}</Text>
+                        <Text style={styles.text}>Qtd: {contador4}</Text>
 
                         <TouchableOpacity
                         style={styles.button}
@@ -214,21 +214,30 @@ export default function Estoque({navigation}) {
 
 
 const styles = StyleSheet.create({
+
+    /* ** Views ** */
     container: {
         flex:1,
-        alignItems: 'center'
+        alignItems: 'center',
+        gap: 20,
+        justifyContent: 'space-evenly'
     },
 
     produto: {
-        width: 400,
-        height: 200,
-        alignItems: 'center'
+        width: 330,
+        height: 250,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 3,
+        borderColor: '#DDDDD'
     },
 
     contador: {
         flexDirection: 'row',
         gap: 20
     },
+
+    /* ** Texts ** */
 
     title: {
         fontSize: 32
@@ -237,6 +246,8 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 24
     },
+
+    /* ** Buttons ** */
 
     button: {
         width: 50,

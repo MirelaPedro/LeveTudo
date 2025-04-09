@@ -8,6 +8,7 @@ import Login from './screens/login';
 import Estoque from './screens/estoque';
 import FaleConosco from './screens/faleConosco';
 import { loadOptions } from '@babel/core';
+import { ScreenStackHeaderSearchBarView } from 'react-native-screens';
 
 
 const Stack = createStackNavigator();
@@ -31,11 +32,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        /* Style={{
-          Header: {
-            headerShown: false
-          }
-        }} */
+      /* screenOptions={{
+        header: (headerShown: false);
+      }} */
       >
 
         <Stack.Screen name='Login' component={Login}/>

@@ -29,6 +29,7 @@ export default function Login({navigation}) {
 const styles = StyleSheet.create({
     container: {
         flex:1,
+        gap: 20,
         alignItems: 'center'
     },
 
@@ -37,11 +38,16 @@ const styles = StyleSheet.create({
     },
 
     input: {
-        fontSize: 32
+        width: 300,
+        height: 50,
+        borderWidth: 5,
+        borderColor: '#DDDD',
+        fontSize: 24
     },
 
     button: {
         width: 300,
-        height: 50
+        height: 50,
+        backgroundColor: '#DDDD'
     }
 })
